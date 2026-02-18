@@ -59,8 +59,7 @@ JOIN pubs.sales AS s
 GROUP BY 
 	a.au_id, 
 	a.au_lname,
-    a.au_fname,
-    s.qty
+    a.au_fname
 ORDER BY SUM(s.qty) DESC
 LIMIT 3;
 
